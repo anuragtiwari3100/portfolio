@@ -78,7 +78,7 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
+          className='mt-12 flex flex-col gap-10'
         >
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
@@ -113,14 +113,20 @@ const Contact = () => {
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
+          <div className="relative inline-block">
+  <button
+    type='submit'
+    className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+  >
+    {loading ? "Sending..." : "Send"}
+  </button>
+  <div className="flex  mt-10 items-center justify-center z-10 text-white text-xl  font-bold" >
+    <p className='ml-10  '>॥ श्री कृष्ण सदा सहायते ॥</p>
+  </div>
+</div>
 
-          <button
-            type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
         </form>
+       
       </motion.div>
 
       <motion.div
@@ -129,6 +135,7 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+    
     </div>
   );
 };
