@@ -9,6 +9,8 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const resumeLink ="https://drive.google.com/file/d/1jcRfM9ZQGU5dK-Zmn3tqi0ptL-9yXdpl/view?usp=drive_link";
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +28,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav
+<>
+<nav
       className={`${
         styles.paddingX
       } w-full flex items-center py-5 fixed top-0 z-20 ${
@@ -49,6 +52,14 @@ const Navbar = () => {
           </p>
         </Link>
 
+
+        <section   className='ml-96 hover:text-white text-[18px] font-medium cursor-pointer' id="resume" style={styles.section}>
+            <a href={resumeLink} target="_blank" rel="noopener noreferrer" style={styles.button}>
+            Download&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resume
+            </a>
+        </section>
+        
+
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
@@ -59,9 +70,12 @@ const Navbar = () => {
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
+         
             </li>
+            
           ))}
         </ul>
+        
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
@@ -96,6 +110,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+</>
   );
 };
 
