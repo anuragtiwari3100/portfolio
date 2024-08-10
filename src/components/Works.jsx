@@ -1,7 +1,7 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-
+import  {versal}   from  "../assets";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -13,7 +13,9 @@ const ProjectCard = ({
   name,
   description,
   tags,
+  wish,
   image,
+  url,
   source_code_link,
 }) => {
   return (
@@ -33,7 +35,9 @@ const ProjectCard = ({
             className='w-full h-full object-cover rounded-2xl'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+
+
+          <div className='absolute  cursor-pointer inset-0 flex justify-end m-3 card-img_hover'>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
@@ -43,9 +47,26 @@ const ProjectCard = ({
                 alt='source code'
                 className='w-1/2 h-1/2 object-contain'
               />
+             
             </div>
+   
           </div>
+          
+  
+
+
         </div>
+
+
+        <div className='absolute inset-0 mt-96    flex justify-end m-3 card-img_hover'>
+                <div    className='black-gradient w-10 h-10 rounded-full flex justify-center   mt-10 items-center cursor-pointer'
+  onClick={() => window.open(url, "_blank")}>
+    
+                <img  src={versal} alt="live "  className='w-1/2 h-1/2 object-contain'
+                />
+                </div>
+              </div>
+
 
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
@@ -55,12 +76,14 @@ const ProjectCard = ({
         <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
             <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
+              key={`${name}-${tag.name} `}
+              className={`text-[14px] ${tag.color} `}
             >
-              #{tag.name}
+              {tag.name}
+         
             </p>
           ))}
+
         </div>
       </Tilt>
     </motion.div>
@@ -89,6 +112,8 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
+
+
     </>
   );
 };

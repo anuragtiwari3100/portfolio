@@ -308,7 +308,9 @@ const projects = [
     name: "VidyaWani: An  Educational App",
     description:
           "Our study app enhances learning with personalized plans, interactive quizzes, and progress tracking. Easy to use on all devices.",
+           
     tags: [
+      
       {
         name: "react",
         color: "blue-text-gradient",
@@ -321,9 +323,15 @@ const projects = [
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        // wish:"See Live",
+        // url:"https://vidya-wani.vercel.app/"
+      }
     ],
+
     image: study,
     source_code_link: "https://github.com/anuragtiwari3100/VidyaWani",
+    url:"https://vidya-wani.vercel.app/"
   },
   {
     name: "Shopping Cart",
@@ -344,6 +352,7 @@ const projects = [
       },
     ],
     image: shoping,
+    url:"https://shopping-cart-websites.vercel.app/cart",
     source_code_link: "https://github.com/anuragtiwari3100/Shopping-Cart-websites",
   },
   {
@@ -365,6 +374,7 @@ const projects = [
       },
     ],
     image: pass,
+    url:"https://password-g-enerator.vercel.app/",
     source_code_link: "https://github.com/anuragtiwari3100/Password-GEnerator",
   },
 ];
