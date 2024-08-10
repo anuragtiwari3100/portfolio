@@ -58,6 +58,9 @@ const ProjectCard = ({
         </div>
 
 
+
+
+
         <div className='absolute inset-0 mt-96    flex justify-end m-3 card-img_hover'>
                 <div    className='black-gradient w-10 h-10 rounded-full flex justify-center   mt-10 items-center cursor-pointer'
   onClick={() => window.open(url, "_blank")}>

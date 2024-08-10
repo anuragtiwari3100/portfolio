@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
- 
     "preview": "vite preview",
-    "build": "react-scripts build" 
+  "build": "npm install --legacy-peer-deps && your-build-command"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
@@ -17,6 +16,7 @@
     "maath": "^0.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-parallax-tilt": "^1.7.236",
     "react-router-dom": "^6.8.1",
     "react-tilt": "^0.1.4",
     "react-vertical-timeline-component": "^3.6.0",
@@ -32,4 +32,3 @@
     "vite": "^4.1.0"
   }
 }
-
