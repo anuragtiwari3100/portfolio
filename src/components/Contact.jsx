@@ -120,9 +120,10 @@ const Contact = () => {
   >
     {loading ? "Sending..." : "Send"}
   </button>
-  <div className="flex  mt-10 items-center justify-center z-10 text-white text-xl  font-bold" >
-    <p className='ml-10  '>॥ श्री कृष्ण सदा सहायते ॥</p>
-  </div>
+  <div className="flex mt-10 items-center justify-center text-white text-xl font-bold">
+  <p className='ml-10'>॥ श्री कृष्ण सदा सहायते ॥</p>
+</div>
+
 </div>
 
         </form>
