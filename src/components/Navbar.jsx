@@ -55,7 +55,7 @@ const Navbar = () => {
 
           <section   className='ml-96 hover:text-white text-[18px] font-medium cursor-pointer' id="resume" style={styles.section}>
             <a href={resumeLink} target="_blank" rel="noopener noreferrer" style={styles.button}>
-            Download&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resume
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resume
             </a>
         </section>
         
