@@ -9,7 +9,6 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const resumeLink ="https://drive.google.com/file/d/1jcRfM9ZQGU5dK-Zmn3tqi0ptL-9yXdpl/view?usp=drive_link";
 
 
   useEffect(() => {
@@ -53,11 +52,7 @@ const Navbar = () => {
         </Link>
 
 
-        <section   className='ml-96 hover:text-white text-[18px] font-medium cursor-pointer' id="resume" style={styles.section}>
-            <a href={resumeLink} target="_blank" rel="noopener noreferrer" style={styles.button}>
-            Download&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resume
-            </a>
-        </section>
+      
         
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
